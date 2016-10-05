@@ -1,6 +1,6 @@
 @echo off
 rem teradata-login.bat by Ted R (github: actuated)
-rem Created 10/3/2016, Last Modified 10/4/2016
+rem Created 10/3/2016, Last Modified 10/5/2016
 rem
 rem Simple login script for Teradata, using BTEQ.
 rem Note that successful logins will hang, waiting for a BTEQ command. Time
@@ -12,6 +12,7 @@ rem Failed login: *** Failure 8017 The UserId, Password or Account is invalid.
 rem Successful login: *** Logon successfully completed.
 rem
 rem 10/4/2016 - Added delayed expansion for timestamp within for loop.
+rem 10/5/2016 - Added user/pass attempt timestamp to output file.
 
 set strINFILE=***SETME***
 set strOUTFILE=***SETME***
@@ -35,6 +36,8 @@ echo.
 
 for /f %%i in (%strINFILE%) do (
 	echo !time!: %%i:%strPASS%
+	echo. >> %strOUTFILE%
+	echo ######## !time!: %%i:%strPASS% ######## >> %strOUTFILE%
 	bteq .LOGON %strSERVER%/%%i,%strPASS%^;ABORT^;.QUIT >> %strOUTFILE% 2>NUL
 )
 
