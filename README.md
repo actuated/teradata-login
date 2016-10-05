@@ -25,27 +25,26 @@ Standard output from the login attempts will be written to `strOUTFILE`.
 ```
 ================[ teradata-login.bat - Ted R (github: actuated) ]================
 
-FYI: OutTest.txt already exists. Continue to append, or Ctrl+C to exit.
-Press any key to continue . . .
+Started: Wed 10/05/2016  8:24:43.46
 
-Started: Tue 10/04/2016  8:30:19.68
-
- 8:30:19.68: User1:P@ssword
- 8:30:19.68: User2:P@ssword
- 8:30:19.68: User3:P@ssword
+ 8:24:43.46: User1:p@ssw0rd
+ 8:24:43.66: User2:p@ssw0rd
+ 8:24:43.85: User3:p@ssw0rd
 .QUIT
- 8:30:23.45: User4:P@ssword
+ 8:24:46.62: User4:p@ssw0rd
 
-Done: Tue 10/04/2016  8:30:26.75
+Done: Wed 10/05/2016  8:24:46.88
 
 =====================================[ fin ]=====================================
 ```
 ### Output File
 ```
+ 
+Started: Wed 10/05/2016  8:24:43.46 
+ 
+########  8:24:43.46: User1:p@ssw0rd ######## 
 
-Started: Tue 10/04/2016  8:30:19.68 
-
- Teradata BTEQ x.x.x.x for WIN32. PID: 6104
+ Teradata BTEQ x.x.x.x for WIN32. PID: 1234
  Copyright 1984-2016, Teradata Corporation. ALL RIGHTS RESERVED.
  Enter your logon or BTEQ command:
 
@@ -56,8 +55,10 @@ Started: Tue 10/04/2016  8:30:19.68
  
  *** Exiting BTEQ...
  *** RC (return code) = 8 
+ 
+########  8:24:43.66: User2:p@ssw0rd ######## 
 
- Teradata BTEQ x.x.x.x for WIN32. PID: 3184
+ Teradata BTEQ x.x.x.x for WIN32. PID: 1234
  Copyright 1984-2016, Teradata Corporation. ALL RIGHTS RESERVED.
  Enter your logon or BTEQ command:
 
@@ -68,8 +69,10 @@ Started: Tue 10/04/2016  8:30:19.68
  
  *** Exiting BTEQ...
  *** RC (return code) = 8 
+ 
+########  8:24:43.87: User3:p@ssw0rd ######## 
 
- Teradata BTEQ x.x.x.x for WIN32. PID: 5520
+ Teradata BTEQ x.x.x.x for WIN32. PID: 1234
  Copyright 1984-2016, Teradata Corporation. ALL RIGHTS RESERVED.
  Enter your logon or BTEQ command:
 
@@ -89,8 +92,10 @@ Started: Tue 10/04/2016  8:30:19.68
  *** You are now logged off from the DBC.
  *** Exiting BTEQ...
  *** RC (return code) = 0 
+ 
+########  8:24:46.62: User4:p@ssw0rd ######## 
 
- Teradata BTEQ x.x.x.x for WIN32. PID: 1976
+ Teradata BTEQ x.x.x.x for WIN32. PID: 1234
  Copyright 1984-2016, Teradata Corporation. ALL RIGHTS RESERVED.
  Enter your logon or BTEQ command:
 
@@ -102,5 +107,5 @@ Started: Tue 10/04/2016  8:30:19.68
  *** Exiting BTEQ...
  *** RC (return code) = 8 
  
-Done: Tue 10/04/2016  8:30:26.75 
+Done: Wed 10/05/2016  8:24:46.88 
 ```
