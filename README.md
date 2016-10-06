@@ -20,8 +20,6 @@ Standard output from the login attempts will be written to `strOUTFILE`.
 * `*** Failure 8017 The UserId, Password or Account is invalid.` indicates failed logins.
 * `*** Logon successfully completed.` indicates successful logins.
 
->Note: Delayed variable expansion is enabled for timestamps within the loop to update. Exclaimation points (`!`) need to be escaped (`^^!`) for passwords, if desired.
-
 # Example Output
 ### Terminal Output with User3 Success
 ```
